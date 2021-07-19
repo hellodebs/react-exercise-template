@@ -5,7 +5,7 @@ function App() {
   const [message, setMessage] = useState("Hello React");
   // Your code below
   useEffect(() => {
-    document.title = "Hello neuefische ";
+    setMessage("Hello neuefische");
   }, []);
 
   return (
