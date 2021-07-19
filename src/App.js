@@ -6,7 +6,7 @@ function App() {
   // Your code below
   useEffect(() => {
     document.title = "Hello neuefische ";
-  });
+  }, []);
 
   return (
     <div className="App">
