@@ -4,6 +4,17 @@ function Counter() {
   const [count, setCount] = useState(0);
   // Your code below
 
+  //loading data from local storage
+  useEffect(() => {
+    const savedVisits = Number(localStorage.getItem("visitCounter"));
+    setCount(savedVisits);
+  });
+
+  //saving data in local storage. If the count state changes, the result should be saved in local storage.
+  useEffect(() => {
+    localStorage.setItem("visitCounter", count);
+  }, [count]);
+
   function handleDecrement() {
     setCount(count - 1);
   }
