@@ -1,0 +1,13 @@
+li {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  align-items: center;
+  padding: 10px;
+}
+
+.female {
+  background-color: rgb(235, 235, 139);
+}
+.male {
+  background-color: rgb(136, 228, 136);
+}

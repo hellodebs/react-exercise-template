@@ -1,11 +1,12 @@
 import "./App.css";
-import Counter from "./components/Counter";
-import { useState } from "react";
+import UserList from "./components/UserList";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
-      <Counter />
+      <Header text="Hallo" />
+      <UserList />
     </div>
   );
 }
